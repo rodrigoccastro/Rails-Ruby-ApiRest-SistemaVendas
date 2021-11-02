@@ -40,7 +40,6 @@ class SaleController < ApplicationController
 
     def addProductSales(sale_id)
         arrProducts = params[:productsales]
-puts "arrProducts=#{arrProducts}"
         arrProducts.each do |product|
             newproduct = Hash.new
             newproduct[:sale_id] = "#{sale_id}"
@@ -53,7 +52,6 @@ puts "arrProducts=#{arrProducts}"
     end
 
     def delProductSales(sale_id)
-puts "entrou-sale-id: #{sale_id}"
         Productsale.where(:sale_id => sale_id).delete_all
     end
 
