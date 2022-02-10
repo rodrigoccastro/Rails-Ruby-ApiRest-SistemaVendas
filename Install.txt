@@ -1,6 +1,6 @@
 Install
 
-1. Config inicial 
+1. Config inicial ---
 	a) executar rails new SalesSystem --api
 	b) cd SalesSystem
 	c) criar database SalesSystem no banco MySql
